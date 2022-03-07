@@ -1,5 +1,23 @@
-<section class="h-100 bg-dark">
-    <div class="container py-5 h-100">
 
+    <div class="container py-5 h-100">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Nom</th>
+            <th>email</th>
+            <th>Profil</th>
+            <th>PieceJointe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cond of condidat">
+            <th>{{cond.id}}</th>
+            <td>{{cond.nom}}</td>
+            <td>{{cond.email}}</td>
+            <td>{{cond.profil}}</td>
+            <td>{{cond.PieceJointe}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>

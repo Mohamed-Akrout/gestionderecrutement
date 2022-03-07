@@ -17,4 +17,12 @@ export class DataService {
   login(data){
     return this.http.post(environment.apiUrl+'/api/login/', data);
   }
+
+  insertData(data){
+    return this.http.post(environment.apiUrl+'/api/addCondidat/', data);
+  }
+
+  getData(){
+    return this.http.get(environment.apiUrl+'/api/ListCondidat/');
+  }
 }

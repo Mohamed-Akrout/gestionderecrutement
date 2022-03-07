@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(private dataService : DataService, private toastr : ToastrService, 
     private formBuilder : FormBuilder, private router : Router) { }
 
-    lofinForm(){
+    loginForm(){
       this.form = this.formBuilder.group({
         email : ['', [Validators.required, Validators.email]],
         password : ['', [Validators.required]]
@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.lofinForm();
+    this.loginForm();
   }
 
   get f(){

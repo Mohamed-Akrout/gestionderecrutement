@@ -13,6 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import { AuthGuard } from './auth.guards';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { FormulaireComponent } from './condidat/formulaire/formulaire.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     RegisterComponent,
     HomeComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,

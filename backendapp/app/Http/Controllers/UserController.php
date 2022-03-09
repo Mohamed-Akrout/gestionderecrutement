@@ -31,6 +31,8 @@ class UserController extends Controller
 return response()->json($response);
     }
 
+
+    
     public function login(Request $request){
         $credentials = $request->only('email', 'password');
         try{

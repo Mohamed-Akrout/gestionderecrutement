@@ -16,7 +16,8 @@
             <td>{{cond.nom}}</td>
             <td>{{cond.email}}</td>
             <td>{{cond.profil}}</td>
-            <td>{{cond.PieceJointe}}</td>
+            <td><a href="#">{{cond.file}}</a></td>
+            <td><button class="btn btn-danger btn-sm" (click)="deleteData(cond.id)">Supprimer</button></td>
           </tr>
         </tbody>
       </table>

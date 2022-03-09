@@ -14,6 +14,8 @@ import { CommonModule } from '@angular/common';
 import { AuthGuard } from './auth.guards';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { FormulaireComponent } from './condidat/formulaire/formulaire.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { FormulaireComponent } from './condidat/formulaire/formulaire.component'
     HomeComponent,
     NavbarComponent,
     DashboardComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    FooterComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

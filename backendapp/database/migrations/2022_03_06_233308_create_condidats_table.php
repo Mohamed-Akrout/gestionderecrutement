@@ -18,8 +18,9 @@ class CreateCondidatsTable extends Migration
             $table->string('nom');
             $table->string('email');
             $table->string('profil');
-            $table->string('pieceJointe');
+            $table->string('file');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

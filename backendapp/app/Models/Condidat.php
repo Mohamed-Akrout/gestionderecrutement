@@ -10,5 +10,5 @@ class Condidat extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $fillable = ['nom','email','profil','pieceJointe',];
+    protected $fillable = ['nom','email','profil','file',];
 }

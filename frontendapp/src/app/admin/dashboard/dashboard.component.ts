@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../service/data.service';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,6 @@ import { DataService } from '../../service/data.service';
 export class DashboardComponent implements OnInit {
 
   condidat:any;
-
   constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
@@ -20,6 +20,13 @@ export class DashboardComponent implements OnInit {
     this.dataService.getData().subscribe(res => {
       this.condidat = res;
     });
+  }
+
+  deleteData(id){
+    // console.log(id);
+    this.dataService.deleteData(id).subscribe(res => {
+      this.getCondidatData();
+    })
   }
 
 }

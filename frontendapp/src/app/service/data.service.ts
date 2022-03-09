@@ -25,4 +25,8 @@ export class DataService {
   getData(){
     return this.http.get(environment.apiUrl+'/api/ListCondidat/');
   }
+
+  deleteData(id){
+    return this.http.delete(environment.apiUrl+'/api/deleteCondidat/'+id);
+  }
 }
